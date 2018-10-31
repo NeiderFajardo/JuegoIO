@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juego de IO III</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/phaser.js"></script>
+    <script type="text/javascript" src="js/Inicio.js"></script>
+    <script type="text/javascript" src="js/Precargador.js"></script>
+    <script type="text/javascript" src="js/Menu.js"></script>
+    <script type="text/javascript" src="js/Instrucciones.js"></script>
+    <script type="text/javascript" src="js/Introduccion.js"></script>
+    <script type="text/javascript" src="js/Juego.js"></script>
+</head>
+
+<body>
+    <script>
+        (function () {
+            var game = new Phaser.Game(540, 810, Phaser.CANVAS, 'game');
+            game.state.add('Inicio', GameState.Inicio);
+            game.state.add('Precargador', GameState.Precargador);
+            game.state.add('Menu', GameState.Menu);
+            game.state.add('Instrucciones', GameState.Instrucciones);
+            game.state.add('Introduccion', GameState.Introduccion);
+            game.state.add('Juego', GameState.Juego);
+            game.state.start('Inicio');
+        })();
+    </script>
+</body>
+
+</html>
