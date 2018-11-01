@@ -13,6 +13,6 @@ GameState.Menu.prototype = {
     startGame: function () {
         //LA IDEA ES PASAR A UNA PANTALLA CON INSTRUCCIONES, COMO NO LA TENGO PASE DE UNA A JUEGO
         //this.game.state.start('Instrucciones');
-        this.game.state.start('Introduccion');
+        this.game.state.start('dialogos');
     }
 };

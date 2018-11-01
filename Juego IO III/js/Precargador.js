@@ -12,6 +12,8 @@ GameState.Precargador.prototype = {
         this.load.image('island', 'assets/isla.gif');
         this.load.image('title', 'assets/titulo1.png');
 
+        //Imagenes de las escenas
+        this.load.image('E1','assets/E-1.png');
         //BOTONES
         this.load.image('button-pause', 'assets/button-pause.png');
 
